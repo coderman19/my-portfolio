@@ -1,0 +1,27 @@
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    display: block;
+    padding: 1.35rem;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    transition: background-color .2s linear;
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.header__left {
+    width: 60%;
+}
+
+.header__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
