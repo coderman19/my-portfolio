@@ -101,7 +101,182 @@
         </aside>        <!-- Main -->
         <main class="main">
             <div class="container">
-                --- layout: default title: my-portfolio | Home --- Hello!
+                --- layout: default title: Blog | Home ---
+                
+                
+                
+                <!-- stories -->
+                <div class="stories">
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/st-1.jpg" alt="" width="80">
+                        <div class="stories__title">
+                            отдыхаю на природе
+                        </div>
+                        <time class="stories__date" datetime="2020-09-30 19:30">30.09.2020</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/st-2.jpg" alt="" width="80">
+                        <div class="stories__title">
+                            заканчиваю сложный проект
+                        </div>
+                        <time class="stories__date" datetime="2020-09-30 19:30">30.09.2020</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/st-3.jpg" alt="">
+                        <div class="stories__title">
+                            переехал в новую квартиру
+                        </div>
+                        <time class="stories__date" datetime="2020-09-30 19:30">30.09.2020</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/st-4.jpg" alt="">
+                        <div class="stories__title">
+                            наступила осень!
+                        </div>
+                        <time class="stories__date" datetime="2020-09-30 19:30">30.09.2020</time>
+                    </div>
+                </div>
+                <!--end/stories-->
+                
+                <!-- add post -->
+                <div class="add-post" action="/" method="post">
+                    <form class="add-post__form" action="/" method="post">
+                        <textarea class="add-post__textarea" name="post-text" placeholder="добавить новость"></textarea>
+                        <div class="add-post__form-actions">
+                            <label class="add-post__file" for="add-post-file">
+                                    <input type="file" id="add-post-file">
+                                </label>
+                            <button class="add-post__send" type="submit">
+                                <img src="assets/images/icons/right-arrow.svg" alt="отправить" width="24">
+                            </button>
+                        </div>
+                
+                    </form>
+                </div>
+                
+                <!-- end/ add post -->
+                <!-- post -->
+                <div class="post">
+                    <div class="post__content">
+                        <p class="post__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum eaque iure ducimus cum, magnam amet ullam et unde enim optio, laboriosam fugiat sed eligendi maiores nulla tenetur blanditiis suscipit.
+                        </p>
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2020-09-29 19:20">29.09.2020
+                                </time>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end/post -->
+                
+                <article class="post">
+                    <div class="post__header post__header--preview">
+                        <a href="#">
+                            <img class="post__preview" src="assets/images/post/post-1.jpg" alt="Как писать код быстро и качественно?">
+                        </a>
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">
+                            <a href="#">Как писать код быстро и качественно?</a>
+                        </h2>
+                        <p class="post__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum eaque iure ducimus cum, magnam amet ullam et unde enim optio, laboriosam fugiat sed eligendi maiores nulla tenetur blanditiis suscipit.
+                        </p>
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2020-09-29 19:20">29.09.2020
+                                </time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="#">создание сайтов</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="post__read">подробнее...</a>
+                    </div>
+                </article>
+                
+                
+                <article class="post">
+                    <div class="post__header">
+                        <div class="embed">
+                            <iframe src="https://www.youtube.com/embed/0J7_qd5sJNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">
+                            <a href="#">Продвижение сайтов</a>
+                        </h2>
+                
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2020-09-29 19:20">29.09.2020
+                                </time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="#">Продвижение видео-контента</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="post__read">оставить комментарий</a>
+                    </div>
+                </article>
+                
+                <!-- post-2 -->
+                <article class="post">
+                    <div class="post__header post__header--preview">
+                        <a href="#">
+                            <img class="post__preview" src="assets/images/post/post-2.jpg" alt="верстка сайтов">
+                        </a>
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">
+                            <a href="#">Верстка сайтов и лендингов</a>
+                        </h2>
+                        <p class="post__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum eaque iure ducimus cum, magnam amet ullam et unde enim optio, laboriosam fugiat sed eligendi maiores nulla tenetur blanditiis suscipit.
+                        </p>
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2020-09-29 19:20">30.09.2020
+                                </time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="#">создание сайтов и лендингов</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="post__read">читать...</a>
+                    </div>
+                </article>
+                <!-- end/post-2 -->
+                
+                <!-- pagination -->
+                <ul class="pagination">
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">&lt</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link active" href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">&gt</a>
+                    </li>
+                </ul>
+                <!-- end/pagination -->
             </div>
         </main>
     </div>
