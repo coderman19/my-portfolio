@@ -11,8 +11,11 @@
     line-height: 1.1;
     font-weight: 500;
     color: $white;
-    transition: all .2s;
+    transition: background-color .2s linear;
     text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
     &--red {
         background-color: $red;
         box-shadow: 0 7px 17px -10px rgba($red, .3);
@@ -26,5 +29,11 @@
         &:hover {
             background-color: darken($blue, 10%);
         }
+    }
+    &--rounded {
+        border-radius: 0.41em;
+    }
+    &--sm {
+        padding: 1.25em 0.7em;
     }
 }

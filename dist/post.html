@@ -25,10 +25,10 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li>
-                            <a class="nav__link" href="">Главная</a>
+                            <a class="nav__link" href="index.html">Главная</a>
                         </li>
                         <li>
-                            <a class="nav__link" href="">Статьи</a>
+                            <a class="nav__link" href="search.html">Статьи</a>
                         </li>
                         <li>
                             <a class="nav__link" href="">Новости</a>
@@ -43,11 +43,11 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li>
-                            <a class="nav__link" href="">Профиль</a>
+                            <a class="nav__link" href="profile.html">Профиль</a>
                         </li>
                     </ul>
                 </nav>
-                <form class="search" action="/" method="post">
+                <form class="search" action="/" method="get">
                     <input class="search__input" type="text" placeholder="Поиск по блогу"></form>
             </div>
         </header>
@@ -58,7 +58,7 @@
             </div>
             <div class="sidebar__content">
                 <div class="profile">
-                    <img src="https://placehold.it/100" alt="" class="profile__avatar">
+                    <img src="../assets/images/my-foto/i-am.jpg" alt="" class="profile__avatar">
                     <div class="profile__name">
                         Павел Пономарев
                     </div>
@@ -69,17 +69,17 @@
         
                     <ul class="social">
                         <li class="social__item">
-                            <a href="#" class="social__link" target="_blank">
+                            <a href="https://www.instagram.com/webcode20/" class="social__link" target="_blank">
                                 <img src="../assets/images/icons/svg/002-instagram.svg" alt="Павел Пономарев instagram" width="28">
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="#" class="social__link" target="_blank">
+                            <a href="facebook.com" class="social__link" target="_blank">
                                 <img src="../assets/images/icons/svg/001-facebook.svg" alt="Павел Пономарев facebook" width="28">
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="#" class="social__link" target="_blank">
+                            <a href="https://vk.com/id287574883" class="social__link" target="_blank">
                                 <img src="../assets/images/icons/svg/003-vk.svg" alt="Павел Пономарев vk" width="28">
                             </a>
                         </li>
@@ -93,10 +93,12 @@
             </div>
             <!-- end/sidebar -->
             <div class="sidebar__footer">
-                <a href="#" class="btn btn--red">Мои работы</a>
-                <button class="btn btn--blue" type="button">
+                <a href="works.html" class="btn btn--red">Мои работы</a>
+                <a href="mailto:freedom-75@mail.ru">
+                    <button class="btn btn--blue" type="button">
                     Написать мне
-                </button>
+                    </button>
+                </a>
             </div>
         </aside>        <!-- Main -->
         <main class="main">
@@ -104,7 +106,7 @@
                 --- layout: default title: Post --- 1234556
                 <article class="post">
                     <div class="post__actions">
-                        <a href="#">вернуться назад</a>
+                        <a href="index.html">вернуться назад</a>
                         <a href="#">поделиться<img class="post__actions-icon" src="assets/images/icons/share.svg" alt="поделиться" width="14"></a>
                     </div>
                     <div class="post__header post__header--open">
@@ -132,22 +134,94 @@
                             <p>
                                 <img src="assets/images/post/post-3.jpg" alt="">
                             </p>
-                            <ul>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                            </ul>
-                            <ol>
-                                <li>just text</li>
-                                <li>just text</li>
-                                <li>just text</li>
-                            </ol>
+                
                             <p>
                                 <span class="fr-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/7LEF-GGCdJQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </span>
                             </p>
                         </div>
+                        <div class="related">
+                            <h3 class="related__title">Самое интересное здесь</h3>
+                
+                            <ul class="related__list">
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title"><a href="#">Фронтенд в 2020 году во Владивостоке начался со скандала</a></h4>
+                                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                                </li>
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title">
+                                        <a href="#">yjdjcnb шедлфьып</a>
+                                    </h4>
+                                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                                </li>
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title"><a href="#">Фронтенд в 2020 году</a></h4>
+                                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                                </li>
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title"><a href="#">Фронтенд в 2020 году</a></h4>
+                                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                                </li>
+                
+                            </ul>
+                        </div>
+                        <!--end/related-->
+                
+                
+                        <h3 class="post__subtitle">Обсуждение</h3>
+                
+                        <form class="form" action="/" method="POST">
+                            <div class="form__group">
+                                <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Ваш комментарий">
+                
+                                    </textarea>
+                                <span class="form__line"></span>
+                            </div>
+                            <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                        </form>
+                
+                        <ul class="comments">
+                            <li class="comments__item">
+                                <div class="comments__header">
+                                    <img class="comments__avatar" src="https://placehold.it/30" alt="">
+                
+                                    <div class="comments__author">
+                                        <div class="comments__name">
+                                            Вадим Прокопчук
+                                        </div>
+                                        <time class="comments__pubdate" datetime="2020-09-12">1 неделю назад</time>
+                                    </div>
+                
+                                </div>
+                
+                
+                                <div class="comments__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex facere aliquam sit illo optio quisquam tenetur voluptas dicta aut sunt, incidunt deserunt officia ea dolores assumenda dolor sapiente aspernatur?
+                                </div>
+                                <button class="comments__reply" type="button">ответить</button>
+                                <ul class="comments">
+                                    <li class="comments__item">
+                                        <div class="comments__header">
+                                            <img class="comments__avatar" src="https://placehold.it/30" alt="">
+                
+                                            <div class="comments__author">
+                                                <div class="comments__name">
+                                                    Дмитрий Валак
+                                                </div>
+                                                <time class="comments__pubdate" datetime="2020-09-12">1 неделю назад</time>
+                                            </div>
+                
+                                        </div>
+                
+                                        <div class="comments__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex facere aliquam sit illo optio quisquam tenetur voluptas dicta aut sunt, incidunt deserunt officia ea dolores assumenda dolor sapiente aspernatur?
+                                        </div>
+                                        <button class="comments__reply" type="button">ответить</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                 
                     </div>
                 

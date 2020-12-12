@@ -1,7 +1,7 @@
 --- layout: default title: Post --- 1234556
 <article class="post">
     <div class="post__actions">
-        <a href="#">вернуться назад</a>
+        <a href="index.html">вернуться назад</a>
         <a href="#">поделиться<img class="post__actions-icon" src="assets/images/icons/share.svg" alt="поделиться" width="14"></a>
     </div>
     <div class="post__header post__header--open">
@@ -29,22 +29,94 @@
             <p>
                 <img src="assets/images/post/post-3.jpg" alt="">
             </p>
-            <ul>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-            </ul>
-            <ol>
-                <li>just text</li>
-                <li>just text</li>
-                <li>just text</li>
-            </ol>
+
             <p>
                 <span class="fr-video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/7LEF-GGCdJQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </span>
             </p>
         </div>
+        <div class="related">
+            <h3 class="related__title">Самое интересное здесь</h3>
+
+            <ul class="related__list">
+                <li class="related__list-item">
+                    <h4 class="related__list-title"><a href="#">Фронтенд в 2020 году во Владивостоке начался со скандала</a></h4>
+                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">yjdjcnb шедлфьып</a>
+                    </h4>
+                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title"><a href="#">Фронтенд в 2020 году</a></h4>
+                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title"><a href="#">Фронтенд в 2020 году</a></h4>
+                    <time class="related__list-date" datetime="2020-06-05">22.09.2020</time>
+                </li>
+
+            </ul>
+        </div>
+        <!--end/related-->
+
+
+        <h3 class="post__subtitle">Обсуждение</h3>
+
+        <form class="form" action="/" method="POST">
+            <div class="form__group">
+                <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Ваш комментарий">
+
+                    </textarea>
+                <span class="form__line"></span>
+            </div>
+            <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+        </form>
+
+        <ul class="comments">
+            <li class="comments__item">
+                <div class="comments__header">
+                    <img class="comments__avatar" src="https://placehold.it/30" alt="">
+
+                    <div class="comments__author">
+                        <div class="comments__name">
+                            Вадим Прокопчук
+                        </div>
+                        <time class="comments__pubdate" datetime="2020-09-12">1 неделю назад</time>
+                    </div>
+
+                </div>
+
+
+                <div class="comments__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex facere aliquam sit illo optio quisquam tenetur voluptas dicta aut sunt, incidunt deserunt officia ea dolores assumenda dolor sapiente aspernatur?
+                </div>
+                <button class="comments__reply" type="button">ответить</button>
+                <ul class="comments">
+                    <li class="comments__item">
+                        <div class="comments__header">
+                            <img class="comments__avatar" src="https://placehold.it/30" alt="">
+
+                            <div class="comments__author">
+                                <div class="comments__name">
+                                    Дмитрий Валак
+                                </div>
+                                <time class="comments__pubdate" datetime="2020-09-12">1 неделю назад</time>
+                            </div>
+
+                        </div>
+
+                        <div class="comments__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex facere aliquam sit illo optio quisquam tenetur voluptas dicta aut sunt, incidunt deserunt officia ea dolores assumenda dolor sapiente aspernatur?
+                        </div>
+                        <button class="comments__reply" type="button">ответить</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
     </div>
 
