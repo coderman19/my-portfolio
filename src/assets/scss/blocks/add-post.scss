@@ -34,8 +34,8 @@
 .add-post__file,
 .add-post__send {
     display: block;
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 4rem;
+    height: 4rem;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -43,12 +43,23 @@
 }
 
 .add-post__file {
-    background: #ebebeb url("../images/icons/camera.svg") center no-repeat;
+    // background-image: url("../images/icons/camera-.svg");
+    background-color: darken($blue, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 1rem 0;
+    position: relative;
+    & img {
+        position: absolute;
+        left: .5rem;
+        top: .5rem;
+    }
     input {
         display: none;
     }
     &:hover {
-        background-color: darken(#ebebeb, 5%);
+        // background-color: darken(#ebebeb, 5%);
+        background-color: $white;
     }
 }
 
