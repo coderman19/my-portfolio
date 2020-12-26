@@ -7,10 +7,23 @@
     left: 0;
     z-index: $z-index-sidebar;
     box-shadow: 5px 0 15px rgba(#050505, .1);
+    @include breakpoint($tablet-bp) {
+        display: flex;
+        flex-direction: column;
+        top: 4rem;
+        height: calc(100vh - 4rem);
+        transform: translateX(-100%);
+        transition: transform .2s linear;
+        padding-bottom: 2rem;
+        overflow: auto;
+        .show-sidebar & {
+            transform: translateX(0);
+        }
+    }
 }
 
 .sidebar__header {
-    height: 180px;
+    height: 18rem;
     background-color: $secondary;
     img {
         display: block;
@@ -18,11 +31,14 @@
         height: 100%;
         object-fit: cover;
     }
+    @include breakpoint($tablet-bp) {
+        height: 10rem;
+    }
 }
 
 .sidebar__content {
     padding: 0 2rem;
-    margin-top: -5rem;
+    flex-grow: 1;
 }
 
 .sidebar__footer {

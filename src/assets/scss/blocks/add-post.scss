@@ -13,13 +13,16 @@
 
 .add-post__form-actions {
     display: flex;
+    flex-shrink: 0;
     justify-content: flex-end;
-    width: 25%;
+    width: 120px;
 }
 
 .add-post__textarea {
     display: block;
+    flex-grow: 1;
     width: 75%;
+    overflow: hidden;
     border: none;
     background: transparent;
     resize: none;

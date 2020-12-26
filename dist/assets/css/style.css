@@ -625,10 +625,14 @@ a:hover {
 }
 
 .container {
-    max-width: 70rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+.profile img {
+    margin-bottom: 2rem;
 }
 
 .profile__avatar {
@@ -848,8 +852,8 @@ a:hover {
 .add-post__file,
 .add-post__send {
     display: block;
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 4rem;
+    height: 4rem;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -857,7 +861,17 @@ a:hover {
 }
 
 .add-post__file {
-    background: #ebebeb url("../images/icons/camera.svg") center no-repeat;
+    background-color: #3137c9;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 1rem 0;
+    position: relative;
+}
+
+.add-post__file img {
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
 }
 
 .add-post__file input {
@@ -865,7 +879,7 @@ a:hover {
 }
 
 .add-post__file:hover {
-    background-color: #dedede;
+    background-color: #fff;
 }
 
 .add-post__send {
