@@ -1,9 +1,7 @@
 .social {
     display: flex;
     justify-content: center;
-    @include breakpoint($tablet-bp) {
-        display: none;
-    }
+    padding-bottom: 2rem;
 }
 
 .social__item {
