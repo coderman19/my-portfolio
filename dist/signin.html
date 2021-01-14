@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="page">
+    <div class="page" id="page">
         <!-- Header -->
         <header class="header">
             <div class="header__left">
@@ -39,7 +39,7 @@
                     </ul>
                 </nav>
         
-                <button class="burger active" type="button">
+                <button class="burger active" type="button" id="sidebarToggle">
                     <span>Открыть кнопки</span>
                 </button>
         
@@ -57,7 +57,7 @@
             </div>
         </header>
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img src="../assets/images/sidebar-bg-2.jpg" alt="">
             </div>
@@ -105,7 +105,7 @@
             <div class="sidebar__footer">
                 <a href="works.html" class="btn btn--red">Мои работы</a>
                 <a href="mailto:freedom-75@mail.ru">
-                    <button class="btn btn--blue" type="button">
+                    <button class="btn btn--blue" type="button" data-modal="contact-modal">
                     Написать мне
                     </button>
                 </a>
@@ -152,8 +152,14 @@
             </div>
         </main>
     </div>
-    <!-- contact.modal -->
-    <!-- <div class="modal">
+
+
+    <!-- modal -->
+    <div class="modal" id="video.modal">
+    <div class="modal__content modal__content--story">
+        <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+    </div>
+</div> <div class="modal" id="contact-modal">
     <div class="modal__content">
         <form class="form" action="/" method="POST">
             <button class="modal__close" type="button">
@@ -187,9 +193,8 @@
             <li>Tel: <a href="tel:+79147309775">+7 (914) 730 97 75</a></li>
         </ul>
     </div>
-</div> -->
-    <!-- <div class="modal">
-    <div class="modal__content">
+</div> <div class="modal">
+    <div class="modal__content" id="story-modal">
         <form class="form" action="/" method="POST">
             <button class="modal__close" type="button">
                 <img src="../assets/images/icons/close.svg" alt="" width="24">
@@ -215,10 +220,8 @@
             </ul>
 
     </div>
-</div> -->
-    <!-- <div class="modal">
-    <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
-</div>  -->
+</div>
+
 
     <!-- footer -->
     <footer>Footer</footer>

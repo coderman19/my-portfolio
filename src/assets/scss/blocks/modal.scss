@@ -1,5 +1,5 @@
 .modal {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,6 +11,9 @@
     top: 0;
     left: 0;
     z-index: $z-index-modal;
+    &.show {
+        display: flex;
+    }
 }
 
 .modal__content {
@@ -20,11 +23,20 @@
     padding: 3.2rem 8rem 3.2rem;
     background-color: $primary;
     border-radius: 5px;
-    &-title {
-        font-size: 1.6rem;
-        padding: 0 0 2.8rem;
-        text-align: center;
-        opacity: .6;
+    transform: translateY(-75px);
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+    // &-title {
+    //     font-size: 1.6rem;
+    //     padding: 0 0 2.8rem;
+    //     text-align: center;
+    //     opacity: .6;
+    // }
+    &--contact {
+        padding-bottom: 2.5rem;
+    }
+    &--story {
+        padding: 0;
+        background: none;
     }
 }
 
@@ -60,4 +72,9 @@
             text-decoration: underline;
         }
     }
+}
+
+.modal__video {
+    display: block;
+    margin: 0 auto;
 }
